@@ -1,0 +1,128 @@
+
+
+.text-animate {
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AEAAE4', endColorstr='#191645', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100%;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        text-shadow: 3px 2px 1px rgba(24, 73, 156, 0.25);
+        font-weight: 800;
+        font-size: 84px;
+        line-height: 70px;
+        letter-spacing: -0.01em;
+        font-family:var(--font-family);
+
+        
+        display:inline-flex;
+        animation: bounceIn .5s .5s;
+
+        animation-fill-mode: forwards;
+        opacity:0;
+        overflow:hidden;
+        
+
+}
+
+.text-animate-hover {
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AEAAE4', endColorstr='#191645', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(180deg, rgba(25, 22, 69, 1) 0%, rgba(174, 170, 228, 1) 100%);
+
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100%;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        text-shadow: 3px 2px 1px rgba(24, 73, 156, 0.25);
+        font-weight: 800;
+        font-size: 84px;
+        line-height: 70px;
+        letter-spacing: -0.01em;
+        font-family:var(--font-family);
+
+
+    min-width:10px;
+    display:inline-block;
+    animation-fill-mode:both;
+
+    overflow:hidden;
+
+    &:hover {
+        animation:jiggle 0.4s;
+        animation-fill-mode: both;
+        color:var(--color-text-gold);
+    }
+}
+
+.i8,.i14 {
+    padding-right:1.5rem;
+}
+@keyframes bounceIn {
+    0% {
+        transform:scale(0.9) rotate(23deg) translateY(10px) translateX(25px);
+        opacity:1;
+    }    
+    50% {
+        transform:scale(0.6) rotate(-3deg) translateY(5px);
+    }
+    100% {
+        transform:scale(1) rotate(0deg) translateY(0px) translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes jiggle {
+    0% {
+        transform:skew(0);
+    }
+    50% {
+        transform:skew(15deg, 0.1turn) translateY(-10px);
+    }
+    75% {
+        transform:skew(-15deg,-0.1turn) translateY(5px);
+    }
+    100% {
+        transform:skew(0) translateY(0px);
+    }
+}
+
+@for $i from 1 through 22 {
+    .i#{$i} {
+        animation-delay:#{calc(1.5 + ($i/10))}s;
+    }
+}

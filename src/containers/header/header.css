@@ -1,0 +1,130 @@
+.header__container-name {
+
+        display:inline-flex;
+        flex-flow:row;
+        justify-content:center;
+        flex:1;
+
+        overflow:visible;
+        width:100vw;
+        padding:2rem 0rem;
+        height:10vh;
+        flex-wrap:wrap;
+        margin-bottom:8rem;
+}
+
+.header__container-name:hover {
+    cursor:default;
+}
+
+.header__container-name-part {
+    overflow-y:hidden;
+}
+
+/* Animated Background for Header */
+
+.animated-bg {
+    width:100vw;
+    height:100vh;
+
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    z-index:-1;
+}
+
+
+.xxl {
+    width:900px;
+    height:900px;
+    border-radius:50%;
+    position:absolute;
+    left:-200px;
+    top:-200px;
+    background-color:#D3D1F0;
+    opacity:0.9;
+    animation:ripple 15s infinite;
+    animation-delay:1s;
+    animation-fill-mode: backwards;
+
+}
+
+.xl {
+    width:700px;
+    height:700px;
+    position:absolute;
+    border-radius:50%;
+    left:-150px;
+    top:-150px;
+    background-color:#AEAAE4;
+    opacity:0.9;
+    animation:ripple 15s infinite;
+    animation-delay:2s;
+    animation-fill-mode: backwards;
+
+
+}
+
+.l {
+    width:500px;
+    height:500px;
+    position:absolute;
+    border-radius:50%;
+    left:-80px;
+    top:-90px;
+    background-color:#8983D8;
+    opacity:0.9;
+    animation:ripple 15s infinite;
+    animation-delay:3s;
+    animation-fill-mode: backwards;
+
+
+}
+
+.m {
+    width:400px;
+    height:400px;
+    position:absolute;
+    border-radius:50%;
+    left:-100px;
+    top:-100px;
+    background-color:#645DCB;
+    opacity:0.9;
+    animation:ripple 15s infinite;
+    animation-delay:4s;
+    animation-fill-mode: backwards;
+
+
+
+}
+
+.s {
+    width:300px;
+    height:300px;
+    position:absolute;
+    border-radius:50%;
+    left:-100px;
+    top:-120px;
+    background-color:#433BBA;
+    opacity:0.9;
+    animation:ripple 15s infinite;
+    animation-delay:5s;
+    animation-fill-mode: backwards;
+
+
+}
+
+
+
+@keyframes ripple {
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.4);
+        
+    }
+    100% {
+        transform:scale(1);
+    }
+}

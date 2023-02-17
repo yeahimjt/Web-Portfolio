@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Kanit&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root {
+  --font-family-important: 'Kanit', sans-serif;
+  --font-family:'Kameron', serif;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  --color-bg-light:#F8F7FD;
+  --color-bg-dark:#21211C;
+  --color-text-light:#FFFFFF;
+  --color-text-dark:#191645;
+  --color-text-gold: #FFD700;
+  --color-text-faded-gold:#FDFF9F;
+  --color-text-faded: #A8ADB3;
+  --color-text-highlight: #B39700;
+  
+
+
+  --color-text-nav:#645DCB;
+  --color-text-sub:#7572A2;
+  /* --color-text-gradient:; */
+  --color-text-banner-dark:#352F93;
+  --color-text-banner-light:#A6A696; 
+  --color-text-text-dark:#BEBEB1;
+
 }

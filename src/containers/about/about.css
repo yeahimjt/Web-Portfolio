@@ -1,0 +1,134 @@
+.about__container {
+    background-color: var(--color-bg-dark);
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+
+}
+.about__container-inner {
+    display:flex;
+    flex-direction:row-reverse;
+    background-color: var(--color-bg-dark);
+    padding:12rem;
+}
+.about__container-profile {
+    flex:1;
+    text-align:center;
+    color:white;
+}
+.about__container-content {
+    flex:1;
+}
+.about__container-content-heading {
+    padding:2rem 0rem;
+}
+.about__container-content-paragraph {
+    padding:2rem 0rem;
+}
+.about__container-content h3 {
+    color:var(--color-text-gold);
+    font-family:var(--font-family);
+    font-size:2.5rem;
+    line-height:40px;
+    overflow:hidden;
+}
+
+.about__container-content h3 i {
+    color:var(--color-text-faded-gold);
+}
+
+.about__container-content p {
+    color:white;
+    font-family:var(--font-family);
+    line-height:25px;
+    font-size:1.2rem;
+}
+
+.about__container-content p i {
+    text-decoration:var(--color-text-gold) wavy underline;
+    text-underline-offset: 4px;
+}
+
+.about__container-content p i:hover {
+    color:var(--color-text-gold);
+    cursor:pointer;
+    text-decoration:var(--color-text-nav) wavy underline;
+    text-underline-offset: 3px;
+}
+
+.about__container-cta {
+    display:flex;
+    width:100%;
+}
+
+.about__container-cta-action {
+    flex:0.9;
+    text-align:center;
+    align-self:center;
+    font-size:20px;
+    opacity:0.5;
+}
+
+.about__container-cta-button {
+    padding:1rem;
+    color:white;
+    flex:0.5;
+    text-align:center;
+    align-self:center;
+    border:2px solid var(--color-text-nav);
+    font-size:1.5rem;
+    min-width:10px;
+    border-radius:30px;
+}
+
+.about__container-cta-button:hover {
+
+
+    background-color:var(--color-text-gold);
+    border:2px solid var(--color-text-gold);
+    color:var(--color-text-nav);
+    transform:skew(-5deg);
+}
+
+/* CSS for curvy borders */
+
+.wave-dark-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-dark-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+}
+
+.wave-dark-top .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave-dark-bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-dark-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave-dark-bottom .shape-fill {
+    fill: #FFFFFF;
+}
