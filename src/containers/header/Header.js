@@ -14,7 +14,7 @@ const Header = () => {
         const loadData = async () => {
             return setTimeout(() => {
                 setClassName('text-animate-hover')
-            }, 1000)
+            }, 6000)
             
         };
             loadData();

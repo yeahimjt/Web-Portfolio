@@ -3,6 +3,7 @@ import Header from './containers/header/Header'
 import About from './containers/about/About'
 import Projects from './containers/projects/Projects'
 import Skills from './containers/skills/Skills'
+import Contact from './containers/contact/Contact'
 import ReactDOM from 'react-dom/client';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About></About>
       <Projects></Projects>
       <Skills></Skills>
+      <Contact></Contact>
     </div>
   );
 }

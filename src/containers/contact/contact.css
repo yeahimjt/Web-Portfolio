@@ -1,0 +1,112 @@
+.contact__container {
+    display:flex;
+    flex-direction:column;
+}
+
+.contact__container-title {
+    display:flex;
+    justify-content:center;
+}
+
+.contact__container-title h2 {
+    color:rgb(36, 35, 35);
+    opacity:0.9;
+    font-size:3rem;
+    text-shadow: 4px 4px 10px rgb(173, 171, 171);
+    padding:4rem;
+}
+
+.contact__container-content-container {
+    display:flex;
+    flex-direction:column;
+    padding:0rem 12rem 12rem 12rem;
+}
+
+.contact__container-content-container h2 {
+    margin-bottom:2rem;
+    line-height:4rem;
+    font-size:2.5rem;
+    overflow:hidden;
+    color:var(--color-text-gold);
+    font-family:var(--font-family);
+}
+
+.contact__container-content-container p {
+    margin:1rem 0rem;
+    font-family:var(--font-family);
+    line-height:25px;
+    font-size:1.2rem;
+
+}
+
+.contact__container-content-form-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:6rem 0rem 6rem 0rem;
+    
+}
+
+.contact__container-content-form {
+    display:flex;
+    flex:0.5;
+    flex-direction:column;
+    padding:2rem;
+    gap:1rem;
+}
+
+.contact__container-content-form-name,.contact__container-content-form-email,.contact__container-content-form-content {
+    display:flex;
+}
+
+.contact__container-input,.contact__container-textarea{
+    padding:1rem;
+    flex:1;
+}
+
+.contact__container-input {
+
+}
+.contact__container-textarea {
+    resize:none;
+    height:500px;
+}
+
+.contact__container-content-form-submit {
+    display:flex;
+    justify-content:flex-end;
+    overflow:hidden;
+
+}
+
+.contact__container-content-form-submit-btn {
+    flex:0.3;
+    padding:1rem;
+    font-family:var(--font-family);
+    font-size:1.2rem;
+    background-color:var(--color-text-gold);
+    color:var(--color-text-nav);
+    border-radius:10px;
+}
+
+.contact__container-content-form-submit-btn:hover {
+    background-color:var(--color-text-nav);
+    color:var(--color-text-gold);
+    cursor:pointer;
+    animation:growSmall 0.8s infinite;
+}
+
+@keyframes growSmall {
+    0% {
+        transform:scale(1);
+    }
+
+    50% {
+        transform:scale(0.9);
+    }
+
+    100% {
+        transform:scale(1);
+    }
+}
+

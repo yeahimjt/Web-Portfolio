@@ -1,0 +1,197 @@
+.projects-title {
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.projects-title h2 {
+    color:rgb(36, 35, 35);
+    opacity:0.9;
+    font-size:3rem;
+    text-shadow: 4px 4px 10px rgb(173, 171, 171);
+    padding:4rem;
+}
+.projects__container {
+    display:flex;
+    flex-direction:column;
+}
+
+.projects__container-inner {
+    display:flex;
+    flex-direction:column-reverse;
+    padding:8rem 12rem 12rem 12rem;
+
+}
+
+.projects__container-display {
+    flex:0.9;
+    height:1000px;
+    flex-direction:row;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    gap:40px;
+    padding:6rem;    
+}
+
+.projects__container-display-container {
+    display:flex;
+    flex-direction:column;
+    background-color:#F1F1EE;
+    flex-wrap:wrap;
+    max-width:600px;
+    max-height:1800px;
+    gap:20px;
+    
+}
+
+.projects__container-display-container:hover {
+    cursor:pointer;
+    transition:scale 0.5s ease-out;
+    scale:1.1;
+    box-shadow:0px 10px 20px darkgray;
+}
+
+.projects__container-display-card-image {
+    display:flex;
+    width:100%;
+    height:303px;
+}
+
+.projects-img {
+    width:600px;
+}
+.projects__container-content {
+    flex:0.7;
+    padding:0rem 6rem 0rem 6rem;
+}
+.projects__container-display-card-content-links {
+    display:flex;
+    padding:1.5rem 1.5rem;
+    justify-content:flex-start;
+    gap:2rem;
+
+}
+
+.projects__container-display-card-content-links-github,
+.projects__container-display-card-content-links-external {
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+    background-color:var(--color-text-gold);
+    padding:0.5rem;
+    border-radius:20px;
+    border:2px solid var(--color-text-gold);
+}
+.unavailable {
+    background-color:#D5D5CD;
+    border:2px solid #D5D5CD;
+
+    cursor:not-allowed;
+}
+.unavailable:hover {
+    cursor: not-allowed;
+    border:2px solid #D5D5CD;
+
+}
+
+.projects__container-display-card-content-links-github:hover,
+.projects__container-display-card-content-links-external:hover {
+    background-color:transparent;
+    border:2px solid var(--color-text-nav);
+    
+}
+
+.projects__container-display-card-skills {
+    display:flex;
+    flex-direction:row;
+    gap:0.5rem 1rem;
+    flex-wrap:wrap;
+    padding:0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.projects__container-display-card-skills-pill {
+    width:7.5rem;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    gap:15px;
+    background-color: var(--color-text-nav);
+    color:var(--color-text-gold);
+    padding:0.5rem;
+    font-size:0.9rem;
+    border-radius:5px;
+    
+}
+
+.projects__container-display-card-skills-pill:hover {
+    animation:growSmaller 0.3s ease-in;
+
+}
+
+.skills-icon-project {
+    scale:1.4;
+}
+
+
+
+.projects__container-display-card-content-text {
+    display:flex;
+    flex-direction:column;
+    padding:0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.projects__container-display-card-content-title h1 {
+    font-family:var(--font-family);
+    font-size:1.5rem;
+    padding:0rem 0rem 0.5rem 0rem;
+}
+
+.projects__container-display-card-content-subtext p {
+    font-family:var(--font-family);
+    font-size:1rem;
+}
+
+.projects__container-display-card-content-subtext p i {
+    padding:0.5rem;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.projects__container-content h2 {
+    margin-bottom:2rem;
+    line-height:4rem;
+    font-size:2.5rem;
+    overflow:hidden;
+    color:var(--color-text-gold);
+    font-family:var(--font-family);
+}
+.projects__container-content h2 i {
+    text-decoration:var(--color-text-gold) wavy underline;
+    color:var(--color-text-nav);
+    position:relative;
+    overflow:hidden;
+    text-underline-offset: 3px;
+}
+
+.projects__container-content p {
+    margin:2rem 0rem;
+    font-family:var(--font-family);
+    line-height:25px;
+    font-size:1.2rem;
+}
+
+@keyframes growSmaller {
+    0% {
+        transform:scale(1);
+    }
+
+    50% {
+        transform:scale(0.8);
+    }
+
+    100% {
+        transform:scale(1);
+    }
+}
+

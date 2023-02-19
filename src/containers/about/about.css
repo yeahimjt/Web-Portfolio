@@ -5,17 +5,38 @@
     flex-direction:column;
 
 }
+
+.about__container-title {
+    display:flex;
+    justify-content:center;
+    align-self:center;
+}
+
+.about__container-title h2 {
+    color:rgb(238, 235, 235);
+    opacity:0.9;
+    font-size:3rem;
+    text-shadow: 4px 4px 10px rgb(100, 100, 100);
+    padding:2rem;
+}
+
 .about__container-inner {
     display:flex;
     flex-direction:row-reverse;
     background-color: var(--color-bg-dark);
     padding:12rem;
+
 }
 .about__container-profile {
     flex:1;
     text-align:center;
     color:white;
 }
+.about__container-profile-cartoon {
+    width:80%;
+    width:80%;
+}
+
 .about__container-content {
     flex:1;
 }
