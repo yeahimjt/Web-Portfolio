@@ -1,3 +1,8 @@
+form {
+    display:flex;
+    flex:1;
+}
+
 .contact__container {
     display:flex;
     flex-direction:column;
@@ -6,6 +11,8 @@
 .contact__container-title {
     display:flex;
     justify-content:center;
+    opacity:0;
+
 }
 
 .contact__container-title h2 {
@@ -20,6 +27,8 @@
     display:flex;
     flex-direction:column;
     padding:0rem 12rem 12rem 12rem;
+    opacity:0;
+
 }
 
 .contact__container-content-container h2 {
@@ -41,22 +50,24 @@
 
 .contact__container-content-form-container {
     display:flex;
+    flex:1;
     justify-content:center;
     align-items:center;
-    padding:6rem 0rem 6rem 0rem;
+    padding:3rem 0rem 6rem 0rem;
     
 }
 
 .contact__container-content-form {
     display:flex;
-    flex:0.5;
+    flex:0.75;
     flex-direction:column;
-    padding:2rem;
-    gap:1rem;
+    gap:1rem 0rem;
+    width:100vw;
 }
 
 .contact__container-content-form-name,.contact__container-content-form-email,.contact__container-content-form-content {
     display:flex;
+
 }
 
 .contact__container-input,.contact__container-textarea{
@@ -64,9 +75,7 @@
     flex:1;
 }
 
-.contact__container-input {
 
-}
 .contact__container-textarea {
     resize:none;
     height:500px;
@@ -74,9 +83,8 @@
 
 .contact__container-content-form-submit {
     display:flex;
-    justify-content:flex-end;
     overflow:hidden;
-
+    flex:0.90;
 }
 
 .contact__container-content-form-submit-btn {
@@ -96,6 +104,51 @@
     animation:growSmall 0.8s infinite;
 }
 
+/* For response */
+
+.contact__container-response-container {
+    display:flex;
+    justify-content:center;
+    padding-top:6rem;
+    overflow:hidden;
+}
+
+.contact__container-response-content {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding:1rem;
+    background-color:#F1F1EE;
+    max-width:500px;
+    overflow:hidden;
+    gap:2rem;
+}
+
+.contact__container-response-check {
+    display:flex;
+    justify-content:center;
+    align-self:center;
+    padding:1rem;
+    overflow:hidden;
+
+}
+
+.contact__container-response-text {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    overflow:hidden;
+
+}
+.response-icon {
+
+    color:lime;
+}
+
+.close-icon:hover {
+    scale:1.2;
+    color:var(--color-text-faded)
+}
 @keyframes growSmall {
     0% {
         transform:scale(1);
@@ -109,4 +162,36 @@
         transform:scale(1);
     }
 }
+
+
+@media screen  and (max-width:2000px) {
+    .modal__container {
+        width:50vw;
+    }
+}
+
+@media screen  and (max-width:1250px) {
+    .contact__container-content-container {
+        padding:6rem;
+    }
+    .contact__container-content-form-container {
+        width:75vw;
+    }
+    .contact__container-content-form  {
+
+        flex:1 1;
+    }
+}
+
+@media screen and (max-width:542px) {
+    .contact__container-content-form  {
+
+
+    }
+    .contact__container-content-container {
+        padding:0rem 2rem;
+    }
+
+}
+
 

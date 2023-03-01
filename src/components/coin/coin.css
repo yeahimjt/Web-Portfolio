@@ -5,3 +5,9 @@
     height:50vh;
     width:100vw;
 }
+
+@media screen  and (max-width:642px) {
+    .coin__container {
+        visibility:hidden;
+    }
+}

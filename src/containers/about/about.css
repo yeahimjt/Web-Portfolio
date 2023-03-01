@@ -10,6 +10,7 @@
     display:flex;
     justify-content:center;
     align-self:center;
+    opacity:0;
 }
 
 .about__container-title h2 {
@@ -28,6 +29,9 @@
 
 }
 .about__container-profile {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     flex:1;
     text-align:center;
     color:white;
@@ -111,6 +115,32 @@
     transform:skew(-5deg);
 }
 
+.fade-down {
+    animation:fade-down 1s ease-in;
+    animation-fill-mode:forwards;
+    animation-delay:0.1s;
+}
+
+.fade-up {
+    animation:fade-up 1s ease-in;
+    animation-fill-mode:forwards;
+    animation-delay:0.1s;
+}
+
+.fade-left {
+    animation:fade-left 1s ease-in;
+    animation-fill-mode:forwards;
+    animation-delay:0.1s;
+
+}
+
+.fade-right {
+    animation:fade-right 1s ease-in;
+    animation-fill-mode:forwards;
+    animation-delay:0.1s;
+
+}
+
 /* CSS for curvy borders */
 
 .wave-dark-top {
@@ -152,4 +182,48 @@
 
 .wave-dark-bottom .shape-fill {
     fill: #FFFFFF;
+}
+.about-profile {
+    scale:1.8;
+}
+#second_hand {
+    animation: updown 1s infinite alternate;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+#hand {
+    animation: moveforward 1s infinite alternate;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+
+@keyframes moveforward {
+    0% {
+        transform:translateX(-0.2px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform:rotate(5deg)
+    }
+    100% {
+        transform:rotate(0deg)
+    }
+}
+
+@media screen  and (max-width:1250px) {
+    .about__container-inner {
+        flex-direction: column;
+        padding:6rem;
+    }
+}
+
+@media screen and (max-width:492px) {
+    .about__container-inner {
+        padding:0 1rem 0rem 1rem;
+    }
 }

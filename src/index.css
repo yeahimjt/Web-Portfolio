@@ -3,11 +3,11 @@
   --font-family-important: 'Kanit', sans-serif;
   --font-family:'Kameron', serif;
 
-  --color-bg-light:#F8F7FD;
+  --color-bg-light:hsl(250, 60%, 98%);
   --color-bg-dark:#21211C;
   --color-text-light:#FFFFFF;
   --color-text-dark:#191645;
-  --color-text-gold: #FFD700;
+  --color-text-gold: rgb(255, 215, 0);
   --color-text-faded-gold:#FDFF9F;
   --color-text-faded: #A8ADB3;
   --color-text-highlight: #B39700;

@@ -7,6 +7,11 @@
     position:relative;
     justify-content:center;
     width:100vw;
+    animation:fade-down 1s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:1.5s;
+    visibility:hidden;
+
 }
 
 .navbar__container-links {
@@ -115,7 +120,6 @@
     visibility:hidden;
     border:none;
     background:transparent;
-
     scale:1.6;
     position:absolute;
     top:2.5rem;
@@ -130,70 +134,15 @@
 
 .friendlyMenu {
     background-color:darkgray;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:50vh;
     position:absolute;
-    width:100vw;
-    top:0;
-    z-index:100;
-    animation: from-top 0.4s ease-in;
-}
-
-.friendlyMenu-links {
-
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.friendlyMenu-links a {
-    position:relative;
-    z-index:100;
-
-}
-
-
-.friendlyMenu-links p {
-    font-size:24px;
-    padding:1rem 3rem; 
-    /* color: #191645; */
-    color: var(--color-text-nav);
-    font-family:var(--font-family-important);
-    z-index:100;
-}
-
-.friendlyMenu-links a::after {
-    content:'';
-    position:absolute;
-    height:3px;
-    width:0;
-    left:0;
-    bottom:-2px;
-    background-color:var(--color-text-gold);
-    transition:0.3s;
-    z-index:100;
-
-}
-
-.friendlyMenu-links a:hover:after {
     width:100%;
-    z-index:100;
-
+    height: 700px;
+    justify-content:center;
+    visibility:hidden;
 }
 
-.friendlyMenu-close {
-    scale:1.8;
 
-}
-
-.friendlyMenu-close:hover {
-    scale:1.9;
-    cursor:pointer;
-}
 
 @media screen and (max-width:1210px) {
     .menu {
@@ -210,6 +159,9 @@
     .navbar__container-links {
         visibility: hidden;
     }
+    .friendlyMenu {
+        visibility:visible;
+    }
 }
 @media screen and (max-width:1302px) {
     .tips {
@@ -224,3 +176,4 @@
 
     }
 }
+

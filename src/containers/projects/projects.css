@@ -3,6 +3,8 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    opacity:0;
+
 }
 .projects-title h2 {
     color:rgb(36, 35, 35);
@@ -21,6 +23,7 @@
     flex-direction:column-reverse;
     padding:8rem 12rem 12rem 12rem;
 
+
 }
 
 .projects__container-display {
@@ -31,7 +34,8 @@
     flex-wrap:wrap;
     justify-content:space-evenly;
     gap:40px;
-    padding:6rem;    
+    padding:5rem;
+    opacity:0;
 }
 
 .projects__container-display-container {
@@ -42,12 +46,14 @@
     max-width:600px;
     max-height:1800px;
     gap:20px;
+    width:600px;
+    box-shadow:0px 0px 30px lightgray;
     
 }
 
 .projects__container-display-container:hover {
-    cursor:pointer;
-    transition:scale 0.5s ease-out;
+
+    transition:scale 0.5s ease-in-out;
     scale:1.1;
     box-shadow:0px 10px 20px darkgray;
 }
@@ -64,12 +70,16 @@
 .projects__container-content {
     flex:0.7;
     padding:0rem 6rem 0rem 6rem;
+    opacity:0;
+
 }
 .projects__container-display-card-content-links {
     display:flex;
     padding:1.5rem 1.5rem;
     justify-content:flex-start;
     gap:2rem;
+    flex-wrap:wrap;
+
 
 }
 
@@ -181,6 +191,20 @@
     font-size:1.2rem;
 }
 
+.stretch {
+    width:100%;
+}
+
+.bigger {
+    animation:bigger 1.5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay:0.1s;
+}
+
+#littlelemon {
+    width:100%;
+}
+
 @keyframes growSmaller {
     0% {
         transform:scale(1);
@@ -195,3 +219,29 @@
     }
 }
 
+@media screen  and (max-width:1250px) {
+    .projects__container-inner {
+        padding:6rem;
+    }
+    .projects__container-content {
+        padding:0rem;
+    }
+    .projects__container-display {
+        padding:2rem;
+    }
+}
+
+@media screen and (max-width:542px) {
+    .projects__container-inner {
+        padding:2rem;
+    }
+
+    .projects__container-display-card-skills-pill {
+        width:6rem;
+    }
+
+    .projects__container-display {
+        padding:1.8rem;
+        overflow:hidden;
+    }
+}
