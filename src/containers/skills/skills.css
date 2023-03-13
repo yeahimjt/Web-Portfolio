@@ -120,7 +120,7 @@
     color:var(--color-text-gold);
     padding:1rem 2rem;
     border-radius:5px;
-    width:7.5rem;
+    width:8rem;
     gap:1rem;
 
 }
@@ -255,7 +255,7 @@
         padding:4rem 6rem 8rem 6rem;
     }
     .skills__container-display-pill {
-        width:5rem;
+        width:6rem;
         padding:.5rem 1rem;
     }
     .skills__container-display-pill p {

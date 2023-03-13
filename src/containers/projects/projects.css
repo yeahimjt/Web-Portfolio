@@ -121,7 +121,7 @@
 }
 
 .projects__container-display-card-skills-pill {
-    width:7.5rem;
+    width:9rem;
     display:flex;
     justify-content:center;
     flex-direction:row;
@@ -160,6 +160,7 @@
 .projects__container-display-card-content-subtext p {
     font-family:var(--font-family);
     font-size:1rem;
+    text-indent: 25px;
 }
 
 .projects__container-display-card-content-subtext p i {
@@ -201,8 +202,17 @@
     animation-delay:0.1s;
 }
 
+.project_italic {
+    color:rgb(134, 133, 133);
+}
+
 #littlelemon {
     width:100%;
+}
+
+#weatherapp {
+    width:100%;
+
 }
 
 @keyframes growSmaller {
@@ -237,7 +247,7 @@
     }
 
     .projects__container-display-card-skills-pill {
-        width:6rem;
+        width:10rem;
     }
 
     .projects__container-display {
