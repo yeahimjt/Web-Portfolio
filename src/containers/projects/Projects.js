@@ -48,12 +48,12 @@ const Projects = () => {
                         <p>React</p>
                     </div>
                     <div className="projects__container-display-card-skills-pill">
-                        <SiHtml5 class="skills-icon-project"/>
-                        <p>HTML</p>
-                    </div>
-                    <div className="projects__container-display-card-skills-pill">
                         <SiRedux class="skills-icon-project"/>
                         <p>Redux</p>
+                    </div>
+                    <div className="projects__container-display-card-skills-pill">
+                        <SiHtml5 class="skills-icon-project"/>
+                        <p>HTML</p>
                     </div>
                     <div className="projects__container-display-card-skills-pill">
                         <SiTailwindcss class="skills-icon-project"/>
