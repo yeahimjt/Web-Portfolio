@@ -9,7 +9,7 @@ import LittleLemon from '../../components/assets/littlelemon.png'
 import WeatherApp from '../../components/assets/weatherapp.png'
 import MovieApp from '../../components/assets/movieapp.png'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import {SiGit} from 'react-icons/si'
+import {SiGit, SiRedux} from 'react-icons/si'
 import { BiLinkExternal, BiPackage } from 'react-icons/bi'
 import { SiReact ,SiFlask, SiPython, SiHtml5, SiCss3, SiJavascript, SiMysql, SiAmazonaws, SiMicrosoftazure, SiPhp, SiPhpmyadmin, SiLinux, SiTailwindcss } from 'react-icons/si'
 import { GrMysql } from 'react-icons/gr'
@@ -50,6 +50,10 @@ const Projects = () => {
                     <div className="projects__container-display-card-skills-pill">
                         <SiHtml5 class="skills-icon-project"/>
                         <p>HTML</p>
+                    </div>
+                    <div className="projects__container-display-card-skills-pill">
+                        <SiRedux class="skills-icon-project"/>
+                        <p>Redux</p>
                     </div>
                     <div className="projects__container-display-card-skills-pill">
                         <SiTailwindcss class="skills-icon-project"/>
