@@ -20,10 +20,7 @@ const Projects = () => {
   const {ref: projectRef, inView: projectInView} = useInView()
 
   return (
-
-
     <>
-    
     <div ref={projectRef} className="projects__container" id="projects" >
       <div className={`${"projects-title"} ${projectInView ? 'fade-down' : ''}`} >
         <h2>PROJECTS</h2>
