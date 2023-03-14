@@ -21,6 +21,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "client-s3-deploy": "aws s3 sync build/ s3://yeahimjt.me",
+    "client-cloudfront-invalidation": "aws cloudfront create-invalidation --distribution-id E5LZFVRJHFMYQ --paths '/*'",
+    "client-deploy": "npm run build && npm run client-s3-deploy && npm run client-cloudfront-invalidation",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
