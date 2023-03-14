@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="coin-logo2" alt="Logo" width="80" height="80">
+    <img src="./coin-logo2" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Web Portfolio</h3>
