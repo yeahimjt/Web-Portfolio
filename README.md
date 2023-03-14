@@ -63,31 +63,24 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://yeahimjt.me)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Prior to creating this project I had little knowledge of where to take my web development journey. I had the idea to create my first ever web portfolio to display my skills with few select technologies to get started with. Admittingly the first few editions of my website were underwelming by my standards, so after a week of completing my web portfolio I would create a new addition improving upon the last. This is my fourth edition of my web portfolio and I am very proud of it.
 
 Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* It is my first successful attempt at creating and rendering a 3d object on the web. This was done using Spline, allowing for direct interactivity with the object based on keyboard inputs
+* It utilizes react-intersection-observer to only render items when scrolled onto, this was a big deal for me as I love websites like apple the animate on scroll smoothly giving the user the idea that they have more control.
+* Mobile-friendly with little media queries.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Of course, this is not the end for my web portfolio. As I continue to learn new technologies I will surely add them to my website to keep it as up to date as possible.
 
 ### Built With
-
 
 * ![React][React.js]
 * ![HTML][HTML5]
 * ![CSS3][CSS3]
-* ![SASS][Sass]
 * ![Git][Git]
 * ![AWS][AWS]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
